@@ -24,11 +24,13 @@ jobs:
 
        # Runs a single command using the runners shell
     - name: Change to src
-      working-directory: ./src
+      run:
+        cd ./src
+        docker-compose up
 
     # Runs a single command using the runners shell
-    - name: Run Docker Compose Services
-      run: docker-compose up
+    #- name: Run Docker Compose Services
+    #  run: docker-compose up
 
     - name: Change to Testing
       run: cd ../testing
