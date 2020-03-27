@@ -24,7 +24,7 @@ jobs:
 
        # Runs a single command using the runners shell
     - name: Change to src
-      run: cd src
+      run: cd /src
 
     # Runs a single command using the runners shell
     - name: Run Docker Compose Services
